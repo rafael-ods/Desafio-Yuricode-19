@@ -1,0 +1,24 @@
+@import url(./cabecalho/cabecalho.css);
+@import url(./apresentacao/apresentacao.css);
+@import url(./funcionalidade/funcionalidade.css);
+@import url(./appe/app.css);
+@import url(./planos/planos.css);
+@import url(./contato/contato.css);
+@import url(./rodape/rodape.css);
+:root {
+    --azul: #0F9AFE;
+    --bg-azul: #EFF8FF;
+    --branco: #FFFFFF;
+    --branco-claro: #EFF8FF;
+    --cinza-claro: #DBDBDB;
+    --cinza: #6E7275;
+    --cinza-escuro: #293145;
+    --fonte-titulo: 'Sora', sans-serif;
+    --fonte-secundaria: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}

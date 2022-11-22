@@ -1,0 +1,37 @@
+.rodape {
+    text-align: center;
+}
+
+.rodape__titulo {
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 40px;
+}
+
+.rodape__link {
+    color: var(--azul);
+    display: inline-block;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-decoration: none;
+    margin-bottom: 37px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .rodape__titulo, .rodape__link {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .rodape__titulo {
+        margin-top: 21px;
+    }
+    .rodape__link {
+        margin-bottom: 21px;
+    }
+}

@@ -1,0 +1,73 @@
+.apresentacao {
+    background-color: var(--bg-azul);
+}
+
+.apresentacao__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.apresentacao__titulo {
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 50px;
+}
+
+.apresentacao__btn {
+    color: var(--branco);
+    background-color: var(--azul);
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+    border-radius: 50px;
+    font-family: var(--fonte-secundaria);
+    padding: 1rem 2.25rem;
+    text-decoration: none;
+}
+
+.apresentacao__imagem {
+    background: url(../../img/Working\ from\ anywhere-rafiki\ 1.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+    .apresentacao__imagem {
+        width: 385px;
+        height: 385px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .apresentacao__container {
+        padding: 2.5rem 1rem !important;
+    }
+
+    .apresentacao__imagem {
+        margin: 0 auto
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .apresentacao__titulo {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .apresentacao__btn {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 7.5px 27px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .apresentacao__imagem {
+        width: 210px;
+        height: 183px;
+    }
+}

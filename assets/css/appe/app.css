@@ -1,0 +1,103 @@
+.app {
+    background-color: var(--bg-azul);
+}
+
+.app__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.app__titulo {
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.app__descricao {
+    color: var(--cinza);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 24px 0 32px 0;
+}
+
+
+.app__imagem {
+    background: url(../../img/New\ notifications-amico\ 1.svg) center / cover no-repeat;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 38px 0 37px 0;
+}
+
+.app__mobile-google, .app__mobile-apple {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .app__imagem {
+        width: 375px;
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app__container {
+        padding: 2.5rem 1rem !important;
+    }
+
+    .app__imagem {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app__container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .app__titulo {
+        font-size: 24px;
+        line-height: 30px;
+        width: 245px;
+        margin: 0 auto;
+    }
+
+    .app__descricao {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .app--google, .app--apple {
+        display: none;
+    }
+
+    .app__mobile-google, .app__mobile-apple {
+        display: inline-block;
+    }
+    .app__mobile-apple {
+        margin-left: 24px
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .app__imagem {
+        width: 210px;
+        height: 183px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .app__mobile-google, .app__mobile-apple {
+        width: 139px;
+    }
+    .app__mobile-apple {
+        margin-left: 0px;
+    }
+}

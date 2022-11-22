@@ -1,0 +1,170 @@
+.planos__titulo {
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    margin: 50px 0 16px 0;
+}
+
+.planos__descricao {
+    color: var(--cinza);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 96px;
+}
+
+.container__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 130px;
+    position: relative;
+
+    background-color: var(--bg-azul);
+    width: 370px;
+    height: 471px;
+    border-radius: 8px;
+}
+
+.card--destaque {
+    background-color: var(--cinza-escuro);
+}
+
+.cards__titulo {
+    color: var(--cinza-escuro);
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 56px 0 59px;
+}
+
+.titulo--prata {
+    color: var(--branco);
+}
+
+.cards__valores {
+    display: inline-block;
+    width: 146px;
+    height: 39px;
+    margin-bottom: 47px;
+}
+
+.valores--bronze {
+    background: url(../../img/Preço-2.svg) center / cover no-repeat;
+}
+
+.valores--prata {
+    background: url(../../img/Preço-1.svg) center / cover no-repeat;
+
+}
+
+.valores--ouro {
+    background: url(../../img/Preço.svg) center / cover no-repeat;
+}
+
+.cards__descricao {
+    color: var(--cinza);
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.descricao--prata {
+    color: var(--cinza-claro);
+}
+
+.cards__preferido {
+    color: var(--branco);
+    font-family: var(--fonte-secundaria);
+    background-color: var(--azul);
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.2em;
+    position: absolute;
+    padding: 5px 32px;
+    top: 95px;
+    text-transform: uppercase;
+}
+
+.cards__btn {
+    color: var(--branco);
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+    border-radius: 50px;
+    font-family: var(--fonte-titulo);
+    font-size: 20px;
+    line-height: 27px;
+    background-color: var(--azul);
+    padding: 0.5rem 5rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .container__cards {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .cards {
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .planos__titulo {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .planos__descricao {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .cards {
+        width: 312px;
+        height: 355px;
+    }
+
+    .cards__titulo {
+        margin: 24px 0 32px;
+    }
+
+    .cards__descricao {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .cards__preferido {
+        top: 135px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cards {
+        width: 280px;
+    }
+}
